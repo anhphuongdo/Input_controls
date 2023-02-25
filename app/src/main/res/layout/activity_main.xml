@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin = "5dp">
+
+        <TextView
+            android:labelFor="@+id/edit_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Họ tên: "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_gravity="center"></TextView>
+
+        <EditText
+            android:id="@+id/edit_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Nhập tên của bạn"
+            android:inputType="textPersonName"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin = "5dp">
+
+        <TextView
+            android:labelFor="@id/edit_Phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_gravity="center"></TextView>
+
+        <EditText
+            android:id="@+id/edit_Phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:text="Nhập SĐT" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:labelFor="@+id/sw_Gender"
+            android:text="Giới tính: "
+            android:textColor="@color/black"
+            android:textSize="25sp"></TextView>
+
+        <Switch
+            android:id="@+id/sw_gender"
+            android:layout_width="179dp"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+            android:textOff="Nữ"
+            android:textOn="Nam"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin = "5dp">
+        <TextView
+            android:labelFor="@+id/edit_Standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trình độ: "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            >
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_Standard"
+            android:layout_width="236dp"
+            android:layout_height="50dp"
+            android:hint="VD: Đại học"
+            android:inputType="text">
+
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinStandard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Danh sách trình độ"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin = "5dp">
+        <TextView
+            android:labelFor="@+id/sb_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuổi: "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/sb_Age"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </SeekBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thể thao: "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_margin = "10dp"
+            >
+        </TextView>
+        <CheckBox
+            android:id="@+id/cb_Sport"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:labelFor="@+id/rg_Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thể loại âm nhạc: "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_margin = "10dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+        <RadioGroup
+            android:id="@+id/rg_Music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RadioButton
+                android:id="@+id/rb_Rock_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Rock">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb_Rap_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Rap">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/rb_Pop_Music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Pop">
+            </RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style = "?android:attr/buttonBarStyle"
+        >
+        <Button
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Register"
+            android:textAlignment="center"
+            style="?android:attr/buttonBarButtonStyle"
+            >
+
+        </Button>
+        <Button
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Cancel"
+            android:textAlignment="center"
+            style="?android:attr/buttonBarButtonStyle"
+            ></Button>
+    </LinearLayout>
+
+</LinearLayout>
