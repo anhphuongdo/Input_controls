@@ -26,7 +26,7 @@
             android:id="@+id/edit_Name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Nhập tên của bạn"
+            android:hint="Nhập tên của bạn"
             android:inputType="textPersonName"
             />
     </LinearLayout>
@@ -51,8 +51,8 @@
             android:id="@+id/edit_Phonenum"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:inputType="text"
-            android:text="Nhập SĐT" />
+            android:inputType="phone"
+            android:hint="Nhập số điện thoại" />
     </LinearLayout>
 
     <LinearLayout
@@ -118,7 +118,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin = "5dp">
+        android:layout_margin = "5dp"
+        android:gravity="left">
         <TextView
             android:labelFor="@+id/sb_Age"
             android:layout_width="wrap_content"
@@ -132,9 +133,13 @@
 
         <SeekBar
             android:id="@+id/sb_Age"
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-        </SeekBar>
+            android:layout_width="270dp"
+            android:layout_height="50dp"></SeekBar>
+
+        <TextView
+            android:id="@+id/tv_Age"
+            android:layout_width="73dp"
+            android:layout_height="50dp"></TextView>
     </LinearLayout>
 
     <LinearLayout
@@ -208,6 +213,7 @@
         style = "?android:attr/buttonBarStyle"
         >
         <Button
+            android:id="@+id/btn_Register"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -219,6 +225,7 @@
 
         </Button>
         <Button
+            android:id="@+id/btn_Cancel"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
