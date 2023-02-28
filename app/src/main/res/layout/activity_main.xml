@@ -20,13 +20,13 @@
             android:text="Họ tên: "
             android:textColor="@color/black"
             android:textSize="25sp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"></TextView>
 
         <EditText
             android:id="@+id/edit_Name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Nhập tên của bạn"
+            android:text="Nhập tên của bạn"
             android:inputType="textPersonName"
             />
     </LinearLayout>
@@ -51,8 +51,8 @@
             android:id="@+id/edit_Phonenum"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:inputType="phone"
-            android:hint="Nhập số điện thoại" />
+            android:inputType="text"
+            android:text="Nhập SĐT" />
     </LinearLayout>
 
     <LinearLayout
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:labelFor="@+id/sw_gender"
+            android:labelFor="@+id/sw_Gender"
             android:text="Giới tính: "
             android:textColor="@color/black"
             android:textSize="25sp"></TextView>
@@ -76,14 +76,9 @@
             android:layout_width="179dp"
             android:layout_height="48dp"
             android:textColor="@color/black"
+            android:textOff="Nữ"
+            android:textOn="Nam"
             android:textSize="25sp" />
-
-        <TextView
-            android:id="@+id/tv_swgender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="25sp"/>
 
     </LinearLayout>
 
@@ -103,30 +98,27 @@
             >
         </TextView>
 
-        <TextView
+        <EditText
             android:id="@+id/edit_Standard"
             android:layout_width="236dp"
             android:layout_height="50dp"
-            android:textSize="25sp"
-            android:textColor="@color/black"
-            android:hint="VD: Đại học">
-        </TextView>
+            android:hint="VD: Đại học"
+            android:inputType="text">
+
+        </EditText>
 
         <Spinner
-            android:id="@+id/spin_Standard"
+            android:id="@+id/spinStandard"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:contentDescription="Danh sách trình độ"
-            android:spinnerMode="dropdown"></Spinner>
-
+            android:contentDescription="Danh sách trình độ"></Spinner>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin = "5dp"
-        android:gravity="left">
+        android:layout_margin = "5dp">
         <TextView
             android:labelFor="@+id/sb_Age"
             android:layout_width="wrap_content"
@@ -140,17 +132,9 @@
 
         <SeekBar
             android:id="@+id/sb_Age"
-            android:layout_width="270dp"
-            android:layout_height="50dp"
-            android:min="0"
-            android:max="150"></SeekBar>
-
-        <TextView
-            android:id="@+id/tv_Age"
-            android:layout_width="73dp"
-            android:layout_height="50dp"
-            android:gravity="center"
-            ></TextView>
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </SeekBar>
     </LinearLayout>
 
     <LinearLayout
@@ -224,7 +208,6 @@
         style = "?android:attr/buttonBarStyle"
         >
         <Button
-            android:id="@+id/btn_Register"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -236,7 +219,6 @@
 
         </Button>
         <Button
-            android:id="@+id/btn_Cancel"
             android:layout_margin="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
